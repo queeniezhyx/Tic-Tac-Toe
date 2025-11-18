@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tic Tac Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Tic Tac Toe</h1>
+    <p>Play a quick game of X and O 🎮</p>
+  </header>
+  <main class="main">
+    <section class="section controls">
+      <h2>Players</h2>
+      <div class="form-group">
+        <label for="player1-name">Player X</label>
+        <input
+          type="text"
+          id="player1-name"
+          placeholder="Player X"
+        />
+      </div>
+      <div class="form-group">
+        <label for="player2-name">Player O</label>
+        <input
+          type="text"
+          id="player2-name"
+          placeholder="Player O"
+        />
+      </div>
+      <button id="start-btn" class="btn primary">Start Game</button>
+    </section>
+    <section class="section board-section">
+      <h2>Game Board</h2>
+      <div id="status-text" class="status-text">
+        Click "Start Game" to begin
+      </div>
+      <div id="board" class="board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+      </div>
+      <div class="actions">
+        <button id="reset-btn" class="btn secondary">Reset Board</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>Built for The Odin Project - Tic Tac Toe</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
